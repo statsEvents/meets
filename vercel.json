@@ -4,3 +4,4 @@
   "routes": [{ "src": "/cron", "dest": "/cron.js" }],
   "cron": "0 0 * * *"
 }
+
