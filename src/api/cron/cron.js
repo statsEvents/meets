@@ -10,7 +10,7 @@ exports.deleteOldData = functions.pubsub
     // const cutoffDate = new Date(currentDate.getTime() - 24 * 60 * 60 * 1000); // 24 hours ago
     const cutoffDate = new Date(currentDate.getTime() - 60 * 1000);
     const collectionRef = db.collection("events");
-    const queryRef = collectionRef.where("timestamp", "<", cutoffDate);
+    const queryRef = collectionRef.where("createdAt", "<", cutoffDate);
 
     return queryRef.get().then((querySnapshot) => {
       const batch = db.batch();
