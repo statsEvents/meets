@@ -80,6 +80,10 @@ select option {
   color: var(--text);
 }
 
+input {
+  cursor: pointer;
+}
+
 main {
   min-height: calc(100svh - 97.5px);
 }

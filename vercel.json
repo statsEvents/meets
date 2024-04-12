@@ -1,15 +1,6 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "cron.js",
-      "use": "@now/node"
-    }
-  ],
+  "builds": [{ "src": "cron.js", "use": "@now/node" }],
   "routes": [{ "src": "/cron", "dest": "/cron.js" }],
-  "functions": {
-    "cron": {
-      "schedule": "0 0 * * *"
-    }
-  }
+  "cron": "0 0 * * *"
 }

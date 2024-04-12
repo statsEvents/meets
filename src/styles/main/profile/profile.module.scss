@@ -11,8 +11,7 @@ h2 {
   justify-content: space-evenly;
   align-content: center;
 
-  &_first,
-  &_second {
+  &_first {
     width: 50%;
   }
 
@@ -24,10 +23,26 @@ h2 {
     border-radius: var(--radius10);
     margin-bottom: 15px;
     width: 90%;
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--text);
     font-size: var(--font18);
     background-color: transparent;
     color: var(--text);
+  }
+
+  &_label {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    label {
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    input {
+      margin-top: 2px;
+    }
   }
 
   &_upload {
@@ -37,7 +52,7 @@ h2 {
     justify-content: center;
     width: 90%;
     height: 300px;
-    border: 2px dashed #0d6efd;
+    border: 2px dashed var(--text);
     border-radius: var(--radius15);
     text-align: center;
     cursor: pointer;
@@ -60,105 +75,30 @@ h2 {
     margin-bottom: 20px;
     outline: 0;
     padding: 5px 15px;
-    border: 1px solid #0d6efd;
+    border: 1px solid var(--text);
     font-size: var(--font18);
     background-color: transparent;
     color: var(--text);
   }
 
-  &_create,
-  &_recreate {
+  &_create {
     display: block;
     padding: 7px 35px;
-    background-color: #0d6efd;
+    background-color: var(--text);
     border: 0;
-    color: white;
     border-radius: var(--radius15);
     font-size: var(--font18);
     margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  &_recreate {
-    background-color: #b00020;
-    margin-left: 15px;
-  }
-
-  &_table {
-    width: 90%;
-    margin: 0 auto;
-    border-bottom: 1px solid #0d6efd;
-    margin-bottom: 40px;
-
-    td {
-      text-align: center;
-    }
-
-    table,
-    th,
-    td {
-      border-top: 1px solid #0d6efd;
-      border-left: 1px solid #0d6efd;
-      border-collapse: collapse;
-      padding: 5px;
-      width: 300px;
-
-      &:last-child {
-        border-right: 1px solid #0d6efd;
-      }
-    }
-
-    &_theme {
-      -webkit-line-clamp: 1;
-      -webkit-box-orient: vertical;
-      display: -webkit-box;
-      overflow: hidden;
-      text-overflow: ellipsis;
-    }
-
-    button {
-      padding: 3px 15px;
-      background-color: #0d6efd;
-      color: white;
-      border-radius: 5px;
-    }
-
-    &_delete {
-      background-color: #b00020 !important;
-    }
+    margin-bottom: 60px;
   }
 }
+
 
 @media (max-width: 1080px) {
   .profile {
     display: block;
-    &_first,
-    &_second {
+    &_first {
       width: 100%;
-    }
-  }
-}
-
-@media (max-width: 660px) {
-  .profile {
-    &_table {
-      td,
-      table,
-      th {
-        width: 200px;
-      }
-    }
-  }
-}
-
-@media (max-width: 440px) {
-  .profile {
-    &_table {
-      td,
-      table,
-      th {
-        width: 100px;
-      }
     }
   }
 }
