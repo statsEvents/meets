@@ -1,0 +1,40 @@
+.lang {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  width: 100%;
+  padding: 6px 20px;
+  border-radius: 5px;
+  background-color: #34495e;
+  color: white;
+  border: 0;
+
+  p {
+    font-size: var(--font18);
+  }
+
+  img {
+    display: block;
+    margin:  auto;
+    margin-right: 7px;
+  }
+}
+
+.outLang {
+  margin-right: 15px;
+  margin-left: auto;
+}
+
+@media (max-width: 512px) {
+  .lang {
+    p b {
+      display: none;
+    }
+
+    img {
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.login {
+  align-items: center;
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  color: var(--text);
+  z-index: 100;
+
+  &_block {
+    background-color: var(--main_bg);
+    width: 400px;
+    border-radius: 20px;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  button {
+    padding: 10px 50px;
+    background-color: #473d45;
+    border-radius: 20px;
+    border: 0;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+    font-size: var(--font18);
+
+    img {
+      margin-right: 10px;
+      position: relative;
+      top: 2px;
+    }
+  }
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

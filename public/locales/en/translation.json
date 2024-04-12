@@ -1,0 +1,46 @@
+{
+  "Lang": "English",
+  "filter": "Filter",
+  "create_card": "Create a card",
+  "choice_main": "Choose the game in which you need a team",
+  "profile": "Profile",
+  "signin": "Sign in",
+  "exit": "Sign out",
+  "team_fing": "Team search",
+  "contacts": "Contacts",
+  "created_card": "Card creation",
+  "contacts_can": "Ways of communication",
+  "country": "Country",
+  "lang": "Language",
+  "rank": "Rank",
+  "create": "Create",
+  "Kazakhstan": "Kazakhstan",
+  "Armenia": "Armenia",
+  "Ukraine": "Ukraine",
+  "Tajikistan": "Tajikistan",
+  "Russia": "Russia",
+  "Uzbekistan": "Uzbekistan",
+  "Kyrgyzstan": "Kyrgyzstan",
+  "Georgia": "Georgia",
+  "All": "All",
+  "really_ex": "Do you really want to get out?",
+
+  "checkContacts": "Fill in one or more communication methods.",
+  "checkDs": "Enter your Discord correctly.",
+  "checkTg": "Enter your Telegram correctly.",
+  "checkVk": "Enter your VK correctly.",
+
+  "changLang": "Change lang",
+
+  "sign": "Login",
+  "w_google": "Continue with Google",
+
+  "empty": "It's empty here for now!",
+  "find_comrade": "Find a comrade",
+  "find_card": "Create a search card",
+  "really_del": "Do you really want to delete the Card? It will be removed from public access!",
+
+  "choice_game": "Choose the game in which you need a team",
+
+  "tickets": "My tickets"
+}
