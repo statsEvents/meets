@@ -1,5 +1,5 @@
-// import { setDoc, doc } from "firebase/firestore";
-// import { db } from "../index"; // Путь к вашему файлу конфигурации Firebase
+import { setDoc, doc } from "firebase/firestore";
+import { db } from "../index"; // Путь к вашему файлу конфигурации Firebase
 
 // export default async (req, res) => {
 //   console.log("Cron job is running!");
