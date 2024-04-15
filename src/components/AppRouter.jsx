@@ -5,7 +5,8 @@ import { auth } from "..";
 import ErrorBoundary from "./ErrorBounds/ErrorBoundary";
 const Preloader = lazy(() => import("./Preloaders/Preloader")),
   Menu = lazy(() => import("../main/home/Home")),
-  Cron = lazy(() => import("../api/cron")),
+  MenuID = lazy(() => import("../main/home/HomeID")),
+  About = lazy(() => import("../main/about/About")),
   Profile = lazy(() => import("../main/profile/Profile")),
   privatRoutes = [
     {
@@ -19,12 +20,12 @@ const Preloader = lazy(() => import("./Preloaders/Preloader")),
       Component: Menu,
     },
     {
-      path: "/api/cron",
-      Component: Cron,
+      path: "/:id",
+      Component: MenuID,
     },
     {
       path: "/about",
-      Component: Menu,
+      Component: About,
     },
   ];
 

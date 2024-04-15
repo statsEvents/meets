@@ -1,4 +1,4 @@
-import { auth } from "../index";
+import { auth, db } from "../index";
 import { Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect, useRef, useState } from "react";
@@ -8,6 +8,12 @@ import Style from "../styles/components/navbar/navbar.module.scss";
 import Lang from "../menu/Lang";
 import LangAbsolute from "../menu/LangAbsolute";
 import MenuList from "../menu/MenuList";
+import {
+  collection,
+  getDocs,
+  deleteDoc,
+  Timestamp,
+} from "firebase/firestore";
 
 const Navbar = () => {
   const [user] = useAuthState(auth);
@@ -17,6 +23,22 @@ const Navbar = () => {
   const [login, setLogin] = useState(false);
   const signBtnRef = useRef(null);
   const [burger, setBurger] = useState(false);
+
+  useEffect(() => {
+    const deleteDocs = async () => {
+      const querySnapshot = await getDocs(collection(db, "events"));
+
+      querySnapshot.forEach((E) => {
+        if (
+          E.data().dateEnd.toDate() < Timestamp.fromDate(new Date()).toDate()
+        ) {
+          console.log(E.data());
+          deleteDoc(E.ref)
+        }
+      });
+    };
+    deleteDocs();
+  }, []);
 
   const setMenu = () => {
     setUserMenu((prev) => !prev);

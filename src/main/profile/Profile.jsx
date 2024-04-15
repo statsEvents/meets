@@ -5,6 +5,7 @@ import { firestore, db } from "../../index"; // Импорт Firestore и баз
 import { useTranslation } from "react-i18next"; // Импорт хука для локализации текста
 import { ref as refe, uploadBytes, getDownloadURL } from "firebase/storage"; // Импорт функций для работы с хранилищем файлов
 import { Timestamp, doc, setDoc } from "firebase/firestore"; // Импорт функций Firestore
+import eventsLst from "./events.json";
 
 const Profile = () => {
   const [t] = useTranslation(); // Инициализация хука для локализации текста
@@ -13,8 +14,28 @@ const Profile = () => {
   const [desk, setDesk] = useState(""); // Состояние для хранения описания новости
   const [uidDoc, setUidDoc] = useState("post=" + Math.random(10000)); // Состояние для хранения идентификатора документа
   const [idImg, setIdImg] = useState(Math.random(1000000)); // Состояние для хранения идентификатора изображения
-  const [changing, setChanging] = useState(false); // Состояние для отображения формы редактирования новости
-  document.title = `Jomart jurek | ${t("profile")}`; // Установка заголовка страницы
+  const [company, setCompany] = useState("");
+  const [link, setLink] = useState("");
+  const [dateEnd, setDateEnd] = useState(new Date().toLocaleString());
+  const [type, setType] = useState("");
+  const [search, setSearch] = useState(false);
+  document.title = `Meets | ${t("profile")}`; // Установка заголовка страницы
+
+  const firebaseTimestamp = (dateString) => {
+    const [date, time] = dateString.split(", ");
+    const [day, month, year] = date.split(".");
+    const [hours, minutes, seconds] = time.split(":");
+
+    const dateObj = new Date(
+      `${year}-${month}-${day}T${hours}:${minutes}:${seconds}`
+    );
+    const timestamp = Timestamp.fromDate(dateObj);
+
+    return timestamp;
+  };
+
+  const inputDateString = dateEnd;
+  const timestamp = firebaseTimestamp(inputDateString);
 
   const send = async () => {
     if (
@@ -23,7 +44,10 @@ const Profile = () => {
       image === undefined ||
       !isNaN(image) ||
       theme === "" ||
-      desk === ""
+      desk === "" ||
+      link === "" ||
+      company === "" ||
+      type === ""
     ) {
       alert(t("P-allInput"));
       return false;
@@ -36,6 +60,10 @@ const Profile = () => {
           setDoc(doc(db, "events", uidDoc), {
             desk: desk,
             theme: theme,
+            company: company,
+            link: link,
+            type: type,
+            dateEnd: timestamp,
             createdAt: Timestamp.fromDate(new Date()),
             changed: false,
             img: url,
@@ -58,6 +86,10 @@ const Profile = () => {
     setTheme((prev) => (prev = ""));
     setUidDoc((prev) => (prev = "event=" + Math.random(10000)));
     setIdImg((prev) => (prev = Math.random(10000)));
+    setLink((prev) => (prev = ""));
+    setCompany((prev) => (prev = ""));
+    setDateEnd((prev) => (prev = new Date().toLocaleString()));
+    setType((prev) => (prev = ""));
   };
 
   // Обработка перетаскивания файла
@@ -65,6 +97,8 @@ const Profile = () => {
     e.preventDefault();
     setImage((prev) => (prev = e.dataTransfer.files[0]));
   };
+
+  // events.forEach(e =>{console.log(e.name)})
 
   return (
     <main>
@@ -77,7 +111,7 @@ const Profile = () => {
                 value={theme}
                 className={Style.profile_theme}
                 type="text"
-                placeholder={'Название мероприятия'}
+                placeholder={"Название мероприятия"}
                 onChange={(e) => {
                   setTheme((prev) => (prev = e.target.value));
                 }}
@@ -104,42 +138,70 @@ const Profile = () => {
                   setDesk((prev) => (prev = e.target.value));
                 }}
                 className={Style.profile_description}
-                placeholder={'Описание'}
+                placeholder={"Описание"}
               ></textarea>
               <input
+                value={company}
                 type="text"
-                placeholder="Название компании"
+                placeholder="Организатор"
                 className={Style.profile_theme}
+                onChange={(e) => {
+                  setCompany((prev) => (prev = e.target.value));
+                }}
               />
               <input
+                value={link}
                 type="text"
                 placeholder="Ссылка на конференцию"
                 className={Style.profile_theme}
+                onChange={(e) => {
+                  setLink((prev) => (prev = e.target.value));
+                }}
               />
-              <div className={Style.profile_label}>
-                <label
-                  onClick={() => {
-                    setChanging((prev) => !prev);
-                  }}
-                >
-                  Огранчить места
-                </label>
+
+              <div className={Style.profile_type}>
                 <input
-                  type="checkbox"
-                  onChange={() => {
-                    setChanging((prev) => !prev);
+                  value={type}
+                  type="text"
+                  placeholder="Тип мероприятия"
+                  className={Style.profile_theme}
+                  onChange={(e) => {
+                    setType((prev) => (prev = e.target.value));
                   }}
-                  checked={changing}
+                  onClick={() => {
+                    setSearch((prev) => (prev = true));
+                  }}
                 />
+                {search && (
+                  <div className={Style.profile_type_list}>
+                    {eventsLst &&
+                      eventsLst.map(
+                        (data) =>
+                          data.name.includes(type) && (
+                            <article
+                              onClick={() => {
+                                setType((prev) => (prev = data.name));
+                                setSearch((prev) => (prev = false));
+                              }}
+                              key={data.name}
+                            >
+                              {data.name}
+                            </article>
+                          )
+                      )}
+                  </div>
+                )}
               </div>
 
-              {changing && (
-                <input
-                  className={Style.profile_theme}
-                  type="number"
-                  placeholder="Введите кол-во мест"
-                />
-              )}
+              <input
+                value={dateEnd}
+                type="text"
+                placeholder="Дата начала"
+                className={Style.profile_theme}
+                onChange={(e) => {
+                  setDateEnd((prev) => (prev = e.target.value));
+                }}
+              />
               <button className={Style.profile_create} onClick={send}>
                 Создать
               </button>
