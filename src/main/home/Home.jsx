@@ -6,8 +6,11 @@ import { query, orderBy, collection } from "firebase/firestore";
 import DateFun from "../../components/DateFun";
 import Preloader from "../../components/Preloaders/Preloader";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Home = () => {
+  const [t] = useTranslation();
+  document.title = `Meets | ${t("Home")}`; // Установка заголовка страницы
   const [events, loading] = useCollectionData(
     query(collection(db, "events"), orderBy("createdAt", "desc"))
   );
@@ -18,7 +21,7 @@ const Home = () => {
     <main>
       <Section>
         <div className={Style.home}>
-          <h1>Все мероприятия</h1>
+          <h1>{t("allEvents")}</h1>
           <div className={Style.home_items}>
             {events &&
               events.map((data) => (
@@ -43,7 +46,7 @@ const Home = () => {
                       {data.type}
                     </p>
                     <button className={Style.home_item_link}>
-                      <i className="fa-solid fa-info"></i> Подробнее...
+                      <i className="fa-solid fa-info"></i> {t("more")}
                     </button>
                   </article>
                 </Link>

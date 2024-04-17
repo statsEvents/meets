@@ -13,6 +13,8 @@ import {
   getDocs,
   deleteDoc,
   Timestamp,
+  getDoc,
+  doc,
 } from "firebase/firestore";
 
 const Navbar = () => {
@@ -23,6 +25,19 @@ const Navbar = () => {
   const [login, setLogin] = useState(false);
   const signBtnRef = useRef(null);
   const [burger, setBurger] = useState(false);
+  const [admin, setAdmin] = useState(false);
+  const uid = user ? user.uid : "";
+
+  useEffect(() => {
+    if (uid) {
+      const userGet = async () => {
+        const data = await getDoc(doc(db, "users", uid));
+        setAdmin((prev) => (prev = data.data().admin));
+      };
+
+      userGet();
+    }
+  }, [uid, setAdmin]);
 
   useEffect(() => {
     const deleteDocs = async () => {
@@ -32,8 +47,7 @@ const Navbar = () => {
         if (
           E.data().dateEnd.toDate() < Timestamp.fromDate(new Date()).toDate()
         ) {
-          console.log(E.data());
-          deleteDoc(E.ref)
+          deleteDoc(E.ref);
         }
       });
     };
@@ -102,17 +116,19 @@ const Navbar = () => {
         {userMenu && (
           <nav className={Style.header_user}>
             <ul>
-              <li>
-                <Link
-                  onClick={() => setUserMenu((prev) => !prev)}
-                  to="/profile"
-                >
-                  <button>
-                    {t("profile")}
-                    <i className="fa-solid fa-address-card"></i>
-                  </button>
-                </Link>
-              </li>
+              {admin && (
+                <li>
+                  <Link
+                    onClick={() => setUserMenu((prev) => !prev)}
+                    to="/profile"
+                  >
+                    <button>
+                      {t("profile")}
+                      <i className="fa-solid fa-address-card"></i>
+                    </button>
+                  </Link>
+                </li>
+              )}
               <li>
                 <button onClick={signOut}>
                   {t("exit")}

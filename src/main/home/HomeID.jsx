@@ -21,20 +21,16 @@ const HomeID = () => {
     getNews();
   }, [stateLoc]);
 
-  console.log(events);
-
   if (!events) return <Preloader />;
+
+  document.title = `Meets | ${events && events.theme}`;
 
   return (
     <main>
       <Section>
         <div className={Style.event}>
-          {/* 
-          {events && <p>{DateFun(events.dateEnd)}</p>} 
-          */}
-
           <p className={Style.event_theme}>
-            Главная / {events.theme} / {events && DateFun(events.createdAt)}
+            {t("Home")} / {events.theme} / {events && DateFun(events.createdAt)}
           </p>
           <div className={Style.event_block}>
             <div className={Style.event_block_img}>
@@ -43,20 +39,20 @@ const HomeID = () => {
             <div className={Style.event_block_content}>
               <h1>{events.theme}</h1>
               <p className={Style.event_block_content_company}>
-                Организатор: {events.company}
+                {t("company")}: {events.company}
               </p>
               <p className={Style.event_block_content_type}>
-                Тип: {events.type}
+                {t("type")}: {events.type}
               </p>
               <hr />
               <p className={Style.event_block_content_title}>Описание</p>
               <p className={Style.event_block_content_desk}>{events.desk}</p>
               <p className={Style.event_block_content_date}>
-                Начало: {events && DateFun(events.dateEnd)}
+                {t("dateStart")}: {events && DateFun(events.dateEnd)}
               </p>
               <Link target="_blank" to={events.link}>
                 <button className={Style.event_block_content_link}>
-                  Перейти
+                  {t("goto")}
                 </button>
               </Link>
             </div>

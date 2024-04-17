@@ -28,6 +28,7 @@
       h1 {
         font-weight: 400;
         font-size: 35px;
+        text-align: start !important;
       }
 
       &_company {
@@ -99,9 +100,6 @@
         font-size: 30px;
     }
     &_block {
-        // &_content {
-        //     font-size: 30px;
-        // }
       &_img img {
         width: fit-content;
         height: 220px;

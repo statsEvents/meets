@@ -35,7 +35,7 @@ const Footer = () => {
           <div className={Style.footer_social_position}>
           {/* Позиционирование социальных иконок */}
           <div>
-            <h4>Социальные сети</h4>
+            <h4>{t('social')}</h4>
             <div className={Style.footer_social}>
               {/* Отображение списка ссылок на социальные сети */}
               {social &&

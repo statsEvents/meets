@@ -74,7 +74,7 @@ const Profile = () => {
           reset();
         })
         .then(() => {
-          alert(t("P-createdNews"));
+          alert(t("P-createdEvent"));
         });
     });
   };
@@ -106,12 +106,12 @@ const Profile = () => {
         <div className={Style.profile}>
           <div className={Style.profile_first}>
             <div>
-              <h1>Создать</h1>
+              <h1>{t("create")}</h1>
               <input
                 value={theme}
                 className={Style.profile_theme}
                 type="text"
-                placeholder={"Название мероприятия"}
+                placeholder={t("eventName")}
                 onChange={(e) => {
                   setTheme((prev) => (prev = e.target.value));
                 }}
@@ -138,12 +138,12 @@ const Profile = () => {
                   setDesk((prev) => (prev = e.target.value));
                 }}
                 className={Style.profile_description}
-                placeholder={"Описание"}
+                placeholder={t("desc")}
               ></textarea>
               <input
                 value={company}
                 type="text"
-                placeholder="Организатор"
+                placeholder={t("company")}
                 className={Style.profile_theme}
                 onChange={(e) => {
                   setCompany((prev) => (prev = e.target.value));
@@ -152,7 +152,7 @@ const Profile = () => {
               <input
                 value={link}
                 type="text"
-                placeholder="Ссылка на конференцию"
+                placeholder={t("link")}
                 className={Style.profile_theme}
                 onChange={(e) => {
                   setLink((prev) => (prev = e.target.value));
@@ -163,7 +163,7 @@ const Profile = () => {
                 <input
                   value={type}
                   type="text"
-                  placeholder="Тип мероприятия"
+                  placeholder={t("type")}
                   className={Style.profile_theme}
                   onChange={(e) => {
                     setType((prev) => (prev = e.target.value));
@@ -196,14 +196,14 @@ const Profile = () => {
               <input
                 value={dateEnd}
                 type="text"
-                placeholder="Дата начала"
+                placeholder={t("dateStart")}
                 className={Style.profile_theme}
                 onChange={(e) => {
                   setDateEnd((prev) => (prev = e.target.value));
                 }}
               />
               <button className={Style.profile_create} onClick={send}>
-                Создать
+                {t("create")}
               </button>
             </div>
           </div>
@@ -214,5 +214,3 @@ const Profile = () => {
 };
 
 export default Profile;
-
-// Название компании, тема, ссылка, описание, кол-во участников огран, картинка

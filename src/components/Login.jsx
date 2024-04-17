@@ -47,6 +47,7 @@ const Login = ({ setLogin, btnRef }) => {
           displayName: user.displayName,
           photoURL: user.photoURL,
           createdAt: Timestamp.fromDate(new Date()),
+          admin: false,
         });
       };
       createCollect();
@@ -77,7 +78,7 @@ const Login = ({ setLogin, btnRef }) => {
         setModal={setLogin}
         refModal={loginRef}
         refButton={btnRef}
-        refButton2={''}
+        refButton2={""}
       />
       <section className={Style.login}>
         <div ref={loginRef} className={Style.login_block}>

@@ -1,7 +1,8 @@
 import { Route, Routes, Navigate } from "react-router-dom";
-import React, { lazy, memo, Suspense } from "react";
+import React, { lazy, memo, Suspense, useState, useEffect } from "react";
 import { useAuthState } from "react-firebase-hooks/auth";
-import { auth } from "..";
+import { auth, db } from "..";
+import { doc, getDoc } from "firebase/firestore";
 import ErrorBoundary from "./ErrorBounds/ErrorBoundary";
 const Preloader = lazy(() => import("./Preloaders/Preloader")),
   Menu = lazy(() => import("../main/home/Home")),
@@ -31,7 +32,22 @@ const Preloader = lazy(() => import("./Preloaders/Preloader")),
 
 const AppRouter = memo(() => {
   const [user] = useAuthState(auth);
-  return user ? (
+  const [admin, setAdmin] = useState(false);
+  const uid = user ? user.uid : "";
+
+  useEffect(() => {
+    if (uid) {
+      const userGet = async () => {
+        const data = await getDoc(doc(db, "users", uid));
+        setAdmin((prev) => (prev = data.data().admin));
+      };
+
+      userGet();
+    }
+  }, [uid, setAdmin]);
+
+  console.log(admin);
+  return user && admin ? (
     <Routes>
       {privatRoutes.map(({ path, Component }) => (
         <Route
