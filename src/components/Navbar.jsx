@@ -1,4 +1,4 @@
-import { auth, db } from "../index";
+import { auth, db, firestore } from "../index";
 import { Link } from "react-router-dom";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useEffect, useRef, useState } from "react";
@@ -16,6 +16,7 @@ import {
   getDoc,
   doc,
 } from "firebase/firestore";
+import { deleteObject, ref } from "firebase/storage";
 
 const Navbar = () => {
   const [user] = useAuthState(auth);
@@ -47,6 +48,7 @@ const Navbar = () => {
         if (
           E.data().dateEnd.toDate() < Timestamp.fromDate(new Date()).toDate()
         ) {
+          deleteObject(ref(firestore, `img/${E.data().imgName}`));
           deleteDoc(E.ref);
         }
       });

@@ -34,6 +34,15 @@ const Profile = () => {
     return timestamp;
   };
 
+  const isURL = (str) => {
+    try {
+      new URL(str);
+      return true;
+    } catch {
+      return false;
+    }
+  };
+
   const inputDateString = dateEnd;
   const timestamp = firebaseTimestamp(inputDateString);
 
@@ -45,7 +54,7 @@ const Profile = () => {
       !isNaN(image) ||
       theme === "" ||
       desk === "" ||
-      link === "" ||
+      isURL(link) === false ||
       company === "" ||
       type === ""
     ) {
@@ -98,7 +107,6 @@ const Profile = () => {
     setImage((prev) => (prev = e.dataTransfer.files[0]));
   };
 
-  // events.forEach(e =>{console.log(e.name)})
 
   return (
     <main>
@@ -156,6 +164,7 @@ const Profile = () => {
                 className={Style.profile_theme}
                 onChange={(e) => {
                   setLink((prev) => (prev = e.target.value));
+                  setSearch((prev) => (prev = true));
                 }}
               />
 

@@ -33,8 +33,8 @@
   "allEvents": "All Events",
   "more": "Read more...",
 
-  "P-allInput": "Fill in all fields",
-  "P-createdEvent": "Fill in all input fields to create an event",
+  "P-allInput": "Fill in all input fields to create an event",
+  "P-createdEvent": "You have successfully created an event!",
 
   "create": "Create",
   "eventName": "Event name",

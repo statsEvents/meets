@@ -24,10 +24,19 @@
 
     &_content {
       margin-left: 20px;
+      margin-bottom: 40px;
+
+      svg {
+        border-radius: 30%;
+        height: 50px;
+        width: 50px;
+        margin-right: 15px;
+      }
 
       h1 {
         font-weight: 400;
         font-size: 35px;
+        margin-top: 0;
         text-align: start !important;
       }
 

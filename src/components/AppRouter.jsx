@@ -46,7 +46,6 @@ const AppRouter = memo(() => {
     }
   }, [uid, setAdmin]);
 
-  console.log(admin);
   return user && admin ? (
     <Routes>
       {privatRoutes.map(({ path, Component }) => (

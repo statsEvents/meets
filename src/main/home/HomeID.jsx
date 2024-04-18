@@ -7,6 +7,7 @@ import Section from "../../UI_kit/Section";
 import Style from "../../styles/main/home/homeID.module.scss";
 import { Link } from "react-router-dom";
 import Preloader from "../../components/Preloaders/Preloader";
+import ShareLink from "../../components/ShareLink";
 
 const HomeID = () => {
   const [t] = useTranslation();
@@ -45,7 +46,7 @@ const HomeID = () => {
                 {t("type")}: {events.type}
               </p>
               <hr />
-              <p className={Style.event_block_content_title}>Описание</p>
+              <p className={Style.event_block_content_title}>{t("desc")}</p>
               <p className={Style.event_block_content_desk}>{events.desk}</p>
               <p className={Style.event_block_content_date}>
                 {t("dateStart")}: {events && DateFun(events.dateEnd)}
@@ -55,6 +56,11 @@ const HomeID = () => {
                   {t("goto")}
                 </button>
               </Link>
+
+              <ShareLink
+                title={events && events.theme}
+                shareRes={window.location.href}
+              />
             </div>
           </div>
         </div>
