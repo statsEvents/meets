@@ -1,812 +1,806 @@
 [
   {
-    "name": "Аквариум"
+    "name": "Aquarium"
   },
   {
-    "name": "Акция"
+    "name": "Promotione"
   },
   {
-    "name": "Акция по сбору средств, фандрайзинг"
+    "name": "Fundraising"
   },
   {
-    "name": "Акция, промо-акция, BTL-акция"
+    "name": "Promotion"
   },
   {
-    "name": "Арт-встреча"
+    "name": "Art"
   },
   {
-    "name": "Арт-ужин"
+    "name": "Dinner"
   },
   {
-    "name": "Аукцион"
+    "name": "Auction"
   },
   {
-    "name": "Аукцион немой"
+    "name": "Silente"
   },
   {
-    "name": "Аукцион тихий, silent auction"
+    "name": "Silent"
   },
   {
-    "name": "Бал"
+    "name": "Ball"
   },
   {
-    "name": "Бал-маскарад"
+    "name": "Masqueradee"
   },
   {
-    "name": "Банкет"
+    "name": "Banquet"
   },
   {
-    "name": "Баркемп, barcamp"
+    "name": "Barcamp"
   },
   {
-    "name": "Баттл, бои"
+    "name": "Battle"
   },
   {
-    "name": "Бенефис"
+    "name": "Benefit"
   },
   {
-    "name": "Беседа"
+    "name": "Conversatione"
   },
   {
-    "name": "Беседа у камина, fireside chat"
+    "name": "Fireside"
   },
   {
-    "name": "Брейн-ринг"
+    "name": "Brain"
   },
   {
-    "name": "Брифинг"
+    "name": "Briefing"
   },
   {
-    "name": "Буккросиинг"
+    "name": "Bookcrossing"
   },
   {
-    "name": "Быстрые свидания, speed dating"
+    "name": "Dating"
   },
   {
-    "name": "Вебинар"
+    "name": "Webinar"
   },
   {
-    "name": "Вертеп"
+    "name": "Vertep"
   },
   {
-    "name": "Вечер"
+    "name": "Evening"
   },
   {
-    "name": "Вечер званный"
+    "name": "Named"
   },
   {
-    "name": "Вечер творческий"
+    "name": "Creative"
   },
   {
-    "name": "Вечер торжественный"
+    "name": "Ceremonial"
   },
   {
-    "name": "Вечеринка"
+    "name": "Party"
   },
   {
-    "name": "Вечеринка костюмированная"
+    "name": "Costume"
   },
   {
-    "name": "Вечеринка коктейльная, коктейль пати, cocktail party"
+    "name": "Cocktaile"
   },
   {
-    "name": "Вечеринка, party"
+    "name": "After-party"
   },
   {
-    "name": "Вечеринка after-party, pre-party, препати"
+    "name": "Quize"
   },
   {
-    "name": "Викторина"
+    "name": "Workshope"
   },
   {
-    "name": "Воркшоп, workshop, мастерская"
+    "name": "Meetings"
   },
   {
-    "name": "Встреча"
+    "name": "Meetinge"
   },
   {
-    "name": "Встреча, арт-встреча"
+    "name": "Celebrity"
   },
   {
-    "name": "Встреча с известной личностью"
+    "name": "Businesse"
   },
   {
-    "name": "Встреча, бизнес-встреча"
+    "name": "Businesss"
   },
   {
-    "name": "Встреча деловая"
+    "name": "Demo"
   },
   {
-    "name": "Встреча, демо-встреча"
+    "name": "Mastermind"
   },
   {
-    "name": "Встречи мастермайнд, мастермайнд группы"
+    "name": "Exhibition"
   },
   {
-    "name": "Выставка"
+    "name": "Debates"
   },
   {
-    "name": "Выставка дебаты"
+    "name": "Animals"
   },
   {
-    "name": "Выставка животных"
+    "name": "Industryw"
   },
   {
-    "name": "Выставка отраслевая"
+    "name": "Trade"
   },
   {
-    "name": "Выставка промышленная, trade show, trade fair"
+    "name": "Expo"
   },
   {
-    "name": "Выставка expo"
+    "name": "Businessw"
   },
   {
-    "name": "Выставка, бизнес-выставка"
+    "name": "Race"
   },
   {
-    "name": "Гонка"
+    "name": "Living"
   },
   {
-    "name": "Гостиная"
+    "name": "Festivities"
   },
   {
-    "name": "Гуляния народные"
+    "name": "Debate"
   },
   {
-    "name": "Дебаты"
+    "name": "Tasting"
   },
   {
-    "name": "Дегустация"
+    "name": "Demonstration"
   },
   {
-    "name": "Демонстрация"
+    "name": "Self-government"
   },
   {
-    "name": "День самоуправления"
+    "name": "Open day"
   },
   {
-    "name": "День открытых дверей"
+    "name": "Career"
   },
   {
-    "name": "День карьеры"
+    "name": "Dialogue"
   },
   {
-    "name": "Диалог"
+    "name": "Disco"
   },
   {
-    "name": "Дискотека"
+    "name": "Discussion"
   },
   {
-    "name": "Дискуссия"
+    "name": "Open"
   },
   {
-    "name": "Дискуссия открытая"
+    "name": "Group"
   },
   {
-    "name": "Дискуссия групповая"
+    "name": "Panel"
   },
   {
-    "name": "Дискуссия панельная"
+    "name": "Report"
   },
   {
-    "name": "Доклад"
+    "name": "Thematic"
   },
   {
-    "name": "Забег тематический"
+    "name": "Travels"
   },
   {
-    "name": "Забег тревел"
+    "name": "Arrival"
   },
   {
-    "name": "Заезд"
+    "name": "Meetineg"
   },
   {
-    "name": "Заседание"
+    "name": "Game"
   },
   {
-    "name": "Игра"
+    "name": "Businessc"
   },
   {
-    "name": "Игра бизнес-игра"
+    "name": "Businessb"
   },
   {
-    "name": "Игра деловая"
+    "name": "Intellectual"
   },
   {
-    "name": "Игра интеллектуальная"
+    "name": "Role-playing"
   },
   {
-    "name": "игра ролевая"
+    "name": "Sports"
   },
   {
-    "name": "Игра спортивная"
+    "name": "Simulation"
   },
   {
-    "name": "Игровая симуляция"
+    "name": "Interview"
   },
   {
-    "name": "Интервью"
+    "name": "Public"
   },
   {
-    "name": "Интервью публичное"
+    "name": "Blitz"
   },
   {
-    "name": "Интервью блиц"
+    "name": "Cabbage"
   },
   {
-    "name": "Капустник"
+    "name": "Carnival"
   },
   {
-    "name": "Карнавал"
+    "name": "Homge"
   },
   {
-    "name": "Квартирник"
+    "name": "Quest"
   },
   {
-    "name": "Квест"
+    "name": "Escape"
   },
   {
-    "name": "Квест, escape room"
+    "name": "Sport"
   },
   {
-    "name": "Квест спортивный, экшн-игра"
+    "name": "City"
   },
   {
-    "name": "Квест городской"
+    "name": "Morpheus"
   },
   {
-    "name": "Квест морфеус"
+    "name": "Quiz"
   },
   {
-    "name": "Квиз"
+    "name": "Educational"
   },
   {
-    "name": "Квиз образовательный"
+    "name": "Entertainment"
   },
   {
-    "name": "Квиз развлекательный"
+    "name": "Marketing"
   },
   {
-    "name": "Квиз маркетинговый"
+    "name": "Clubs"
   },
   {
-    "name": "КВН"
+    "name": "Case"
   },
   {
-    "name": "Кейс стади, case study"
+    "name": "Club"
   },
   {
-    "name": "Клуб"
+    "name": "Interest"
   },
   {
-    "name": "Клуб по интересам"
+    "name": "Conversation"
   },
   {
-    "name": "Клуб разговорный"
+    "name": "Cocktail"
   },
   {
-    "name": "Коктейль, вечеринка коктейльная, коктейль пати, cocktail party"
+    "name": "Colloquium"
   },
   {
-    "name": "Коллоквиум, colloquium"
+    "name": "Congresss"
   },
   {
-    "name": "Конгресс"
+    "name": "Contest"
   },
   {
-    "name": "Конкурс"
+    "name": "Conference"
   },
   {
-    "name": "Конференция"
+    "name": "Business"
   },
   {
-    "name": "Конференция бизнес"
+    "name": "Web"
   },
   {
-    "name": "Конференция веб-"
+    "name": "Internet"
   },
   {
-    "name": "Конференция интернет"
+    "name": "Online"
   },
   {
-    "name": "Конференция онлайн"
+    "name": "Industry"
   },
   {
-    "name": "Конференция отраслевая"
+    "name": "TED"
   },
   {
-    "name": "Конференция TED"
+    "name": "Unconference"
   },
   {
-    "name": "Конференция unconference, анти-конференция"
+    "name": "Convention"
   },
   {
-    "name": "Конференция, конвент"
+    "name": "Scientific"
   },
   {
-    "name": "Конференция научная, научно-практическая"
+    "name": "Neoconference"
   },
   {
-    "name": "Конференция неоконференция"
+    "name": "Professional"
   },
   {
-    "name": "Конференция профессиональная"
+    "name": "Quiet"
   },
   {
-    "name": "Конференция тихая"
+    "name": "Concert"
   },
   {
-    "name": "Концерт"
+    "name": "Crash"
   },
   {
-    "name": "Краш тест"
+    "name": "Cup"
   },
   {
-    "name": "Круглый стол"
+    "name": "Laboratory"
   },
   {
-    "name": "Кубок"
+    "name": "Lectory"
   },
   {
-    "name": "Лаборатория"
+    "name": "Lecture"
   },
   {
-    "name": "Лекторий"
+    "name": "Round table"
   },
   {
-    "name": "Лекция"
+    "name": "Silentlecture"
   },
   {
-    "name": "Лекция беззвучная"
+    "name": "Dialoguelecture"
   },
   {
-    "name": "Лекция-диалог"
+    "name": "Discussionlecture"
   },
   {
-    "name": "Лекция-дискуссия"
+    "name": "Flyer"
   },
   {
-    "name": "Летучка"
+    "name": "Marathon"
   },
   {
-    "name": "Литературная гостиная"
+    "name": "Video"
   },
   {
-    "name": "Марафон"
+    "name": "Masquerade"
   },
   {
-    "name": "Марафон видео"
+    "name": "Masterclass"
   },
   {
-    "name": "Маскарад"
+    "name": "Workshop"
   },
   {
-    "name": "Мастер класс"
+    "name": "Match"
   },
   {
-    "name": "Мастерская"
+    "name": "Meetinges"
   },
   {
-    "name": "Матч"
+    "name": "Brainstorming"
   },
   {
-    "name": "Митинг"
+    "name": "Networking"
   },
   {
-    "name": "Мозговой штурм, брейншторм, brainstorming"
+    "name": "Librarynight"
   },
   {
-    "name": "Нетворкинг"
+    "name": "Museumnight"
   },
   {
-    "name": "Ночь в библиотеке"
+    "name": "Rite"
   },
   {
-    "name": "Ночь в музее"
+    "name": "Groupdiscussion"
   },
   {
-    "name": "Обряд"
+    "name": "Spark"
   },
   {
-    "name": "Обсуждение групповое"
+    "name": "SubjectOlympiad"
   },
   {
-    "name": "Огонек"
+    "name": "SportsOlympiad"
   },
   {
-    "name": "Олимпиада предметная"
+    "name": "Operationameeting"
   },
   {
-    "name": "Олимпиада спортивная"
+    "name": "Openmic"
   },
   {
-    "name": "Оперативка"
+    "name": "OpenSpace"
   },
   {
-    "name": "Открытый микрофон"
+    "name": "Parade"
   },
   {
     "name": "Open Space"
   },
   {
-    "name": "Парад"
+    "name": "Militaryparade"
   },
   {
-    "name": "Парад Военный"
+    "name": "Championship"
   },
   {
-    "name": "Первенство"
+    "name": "Performances"
   },
   {
-    "name": "Перфоманс"
+    "name": "Peachheap"
   },
   {
-    "name": "Печа куча"
+    "name": "Picnic"
   },
   {
-    "name": "Пикет"
+    "name": "Picket"
   },
   {
-    "name": "Пикник"
+    "name": "Pitche"
   },
   {
-    "name": "Питч"
+    "name": "Pitch"
   },
   {
-    "name": "Питчинг перед инвесторами"
+    "name": "Pitchsession"
   },
   {
-    "name": "Питч-сессия"
+    "name": "Planningmeeting"
   },
   {
-    "name": "Планёрка"
+    "name": "Pleinair"
   },
   {
-    "name": "Пленэр"
+    "name": "Plogging"
   },
   {
-    "name": "Плоггинг"
+    "name": "Hangingbook"
   },
   {
-    "name": "Подвешенная книга"
+    "name": "Suspendedcourse"
   },
   {
-    "name": "Подвешенный курс"
+    "name": "Duel"
   },
   {
-    "name": "Поединок"
+    "name": "Trip"
   },
   {
-    "name": "Поездка"
+    "name": "Show"
   },
   {
-    "name": "Показ"
+    "name": "Cinemashowing"
   },
   {
-    "name": "Показ Кинопоказ"
+    "name": "Fashionshow"
   },
   {
-    "name": "Показ модный"
+    "name": "Showxshowing"
   },
   {
-    "name": "Показ Шоу показ"
+    "name": "Dedication"
   },
   {
-    "name": "Посвящение"
+    "name": "Setting"
   },
   {
-    "name": "Постановка"
+    "name": "Campaign"
   },
   {
-    "name": "Поход"
+    "name": "Holiday"
   },
   {
-    "name": "Праздник, happy hour"
+    "name": "Practicum"
   },
   {
-    "name": "Практикум"
+    "name": "Performance"
   },
   {
-    "name": "Представление"
+    "name": "Presentation"
   },
   {
-    "name": "Презентация (лекция со слайдами)"
+    "name": "Product/servicepresentation"
   },
   {
-    "name": "Презентация продукта/услуги"
+    "name": "Presslunch"
   },
   {
-    "name": "Пресс-ланч"
+    "name": "Pressbriefing"
   },
   {
-    "name": "Пресс-брифинг"
+    "name": "Pressbreakfast"
   },
   {
-    "name": "Пресс-завтрак"
+    "name": "Pressconference"
   },
   {
-    "name": "Пресс-конференция"
+    "name": "Presstour"
   },
   {
-    "name": "Пресс-тур"
+    "name": "Pressdinner"
   },
   {
-    "name": "Пресс-ужин"
+    "name": "Reception"
   },
   {
-    "name": "Приём"
+    "name": "Run"
   },
   {
-    "name": "Пробег"
+    "name": "Walk"
   },
   {
-    "name": "Прогулка"
+    "name": "Travel"
   },
   {
-    "name": "Путешествие"
+    "name": "Fiveminutes"
   },
   {
-    "name": "Пятиминутка"
+    "name": "Speakingclub"
   },
   {
-    "name": "Разговорный клуб, speaking club"
+    "name": "Sale"
   },
   {
-    "name": "Распродажа"
+    "name": "Garagesale"
   },
   {
-    "name": "Распродажа гаражная, гараж сейл, garage sale"
+    "name": "Reconstruction"
   },
   {
-    "name": "Реконструкция"
+    "name": "Rehearsal"
   },
   {
-    "name": "Репетиция"
+    "name": "Retreat"
   },
   {
-    "name": "Ретрит, retreat"
+    "name": "Ritual"
   },
   {
-    "name": "Ритуал"
+    "name": "Draw"
   },
   {
-    "name": "Розыгрыш"
+    "name": "Fishing"
   },
   {
-    "name": "Рыбалка"
+    "name": "Summit"
   },
   {
-    "name": "Саммит"
+    "name": "Seminar"
   },
   {
-    "name": "Семинар"
+    "name": "Session"
   },
   {
-    "name": "Сессия"
+    "name": "Q&Asession"
   },
   {
-    "name": "Сессия вопросов-ответов"
+    "name": "Coachsession"
   },
   {
-    "name": "Сессия, коуч-сессия"
+    "name": "Pitch session"
   },
   {
-    "name": "Сессия, питч-сессия"
+    "name": "Strategic session"
   },
   {
-    "name": "Сессия стратегическая"
+    "name": "Failures session"
   },
   {
-    "name": "Сессия факап (fackup) ошибок"
+    "name": "Foresight session"
   },
   {
-    "name": "Сессия, форсайт-сессия"
+    "name": "Expert session"
   },
   {
-    "name": "Сессия, экспертная сессия, экспертная группа"
+    "name": "Symposium"
   },
   {
-    "name": "Симпозиум"
+    "name": "Slam"
   },
   {
-    "name": "Cлэм"
+    "name": "Science slam"
   },
   {
-    "name": "Слэм научный, science slam"
+    "name": "Meetingsa"
   },
   {
-    "name": "Собрание"
+    "name": "Meeting"
   },
   {
-    "name": "Совещание"
+    "name": "Spartakiad"
   },
   {
-    "name": "Спартакиада"
+    "name": "Sports competition"
   },
   {
-    "name": "Спектакль"
+    "name": "Sports holiday"
   },
   {
-    "name": "Спортивное соревнование"
+    "name": "Stand-up"
   },
   {
-    "name": "Спортивный праздник"
+    "name": "Community work day"
   },
   {
-    "name": "Стенд-ап"
+    "name": "Congress"
   },
   {
-    "name": "Субботник"
+    "name": "Creative evening"
   },
   {
-    "name": "Съезд"
+    "name": "Theatricalization"
   },
   {
-    "name": "Творческий вечер"
+    "name": "Team building"
   },
   {
-    "name": "Театрализация"
+    "name": "Ceremonial opening or closing"
   },
   {
-    "name": "Тимбилдинг, team-building"
+    "name": "Broadcast"
   },
   {
-    "name": "Торжественное открытие или закрытие"
+    "name": "Live broadcast"
   },
   {
-    "name": "Трансляция"
+    "name": "Training"
   },
   {
-    "name": "трансляция прямая"
+    "name": "Business training"
   },
   {
-    "name": "Тренинг"
+    "name": "Team-building training"
   },
   {
-    "name": "Тренинг бизнес"
+    "name": "Psychological training"
   },
   {
-    "name": "Тренинг командообразующий"
+    "name": "Open workout"
   },
   {
-    "name": "Тренинг психологический"
+    "name": "Tour"
   },
   {
-    "name": "Тренировка открытая"
+    "name": "Audio tour"
   },
   {
-    "name": "Тур"
+    "name": "Audio ethnographic tour"
   },
   {
-    "name": "Тур аудиотур"
+    "name": "Ethno tour"
   },
   {
-    "name": "Тур аудиоэтнотур"
+    "name": "Tournament"
   },
   {
-    "name": "Тур этнотур"
+    "name": "Hiking tour"
   },
   {
-    "name": "Турнир"
+    "name": "Toursllet"
   },
   {
-    "name": "Турпоход"
+    "name": "Open-air festival"
   },
   {
-    "name": "Турслет"
+    "name": "Festival"
   },
   {
-    "name": "Фестиваль на открытом воздухе, jpen-air"
+    "name": "Flash mob"
   },
   {
-    "name": "Фестиваль, Фест"
+    "name": "Foresightsession"
   },
   {
-    "name": "Флешмоб"
+    "name": "Forum"
   },
   {
-    "name": "Форсайт-сессия"
+    "name": "Photo marathon"
   },
   {
-    "name": "Форум"
+    "name": "Photo session"
   },
   {
-    "name": "Фотомарафон"
+    "name": "Photo drying"
   },
   {
-    "name": "Фотосессия"
+    "name": "Buffet"
   },
   {
-    "name": "Фотосушка"
+    "name": "Hackathon"
   },
   {
-    "name": "Фуршет"
+    "name": "Ceremony"
   },
   {
-    "name": "Хакатон, hackathon"
+    "name": "Closingceremony"
   },
   {
-    "name": "Церемония"
+    "name": "Awardceremony"
   },
   {
-    "name": "Церемония закрытия"
+    "name": "Openingceremony"
   },
   {
-    "name": "Церемония награждения"
+    "name": "Challenge"
   },
   {
-    "name": "Церемония открытия"
+    "name": "Championshipe"
   },
   {
-    "name": "Челлендж"
+    "name": "Reading"
   },
   {
-    "name": "Чемпионат"
+    "name": "Readings"
   },
   {
-    "name": "Читка"
+    "name": "Scientific readings"
   },
   {
-    "name": "Чтения"
+    "name": "Literary readings"
   },
   {
-    "name": "Чтения научные"
+    "name": "Procession"
   },
   {
-    "name": "Чтения литературные"
+    "name": "Carnivalprocession"
   },
   {
-    "name": "Шествие"
+    "name": "Showe"
   },
   {
-    "name": "Шествие карнавальное (тематическое)"
+    "name": "Culinary show"
   },
   {
-    "name": "Шоу"
+    "name": "Scientific and educational show"
   },
   {
-    "name": "Шоу кулинарное"
+    "name": "Showshowing"
   },
   {
-    "name": "Шоу научно-познавательное"
+    "name": "Entertainment show"
   },
   {
-    "name": "Шоу показ"
+    "name": "Talentshow"
   },
   {
-    "name": "Шоу развлекательное"
+    "name": "Realityshow"
   },
   {
-    "name": "Шоу талантов"
+    "name": "Talkshow"
   },
   {
-    "name": "Реалити-шоу"
+    "name": "Excursion"
   },
   {
-    "name": "Ток-шоу"
+    "name": "Virtualexcursion"
   },
   {
-    "name": "Экскурсия"
+    "name": "Openexcursion"
   },
   {
-    "name": "Экскурсия виртуальная"
+    "name": "Expedition"
   },
   {
-    "name": "Экскурсия открытая"
+    "name": "Experiment"
   },
   {
-    "name": "Экспедиция"
+    "name": "Jobfair"
   },
   {
-    "name": "Эксперимент, экспериментальный формат"
+    "name": "Ideasfair"
   },
   {
-    "name": "Ярмарка вакансий"
-  },
-  {
-    "name": "Ярмарка идей"
-  },
-  {
-    "name": "Ярмарка, маркет"
+    "name": "Fair"
   }
 ]

@@ -43,7 +43,7 @@ const Home = () => {
                     </p>
                     <p>
                       <i className="fa-solid fa-comments"></i>
-                      {data.type}
+                      {t(data.type)}
                     </p>
                     <button className={Style.home_item_link}>
                       <i className="fa-solid fa-info"></i> {t("more")}

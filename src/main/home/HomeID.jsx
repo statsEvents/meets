@@ -43,7 +43,7 @@ const HomeID = () => {
                 {t("company")}: {events.company}
               </p>
               <p className={Style.event_block_content_type}>
-                {t("type")}: {events.type}
+                {t("type")}: {t(events.type)}
               </p>
               <hr />
               <p className={Style.event_block_content_title}>{t("desc")}</p>

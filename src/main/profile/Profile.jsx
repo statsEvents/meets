@@ -170,7 +170,7 @@ const Profile = () => {
 
               <div className={Style.profile_type}>
                 <input
-                  value={type}
+                  value={t(type)}
                   type="text"
                   placeholder={t("type")}
                   className={Style.profile_theme}
@@ -194,7 +194,7 @@ const Profile = () => {
                               }}
                               key={data.name}
                             >
-                              {data.name}
+                              {t(data.name)}
                             </article>
                           )
                       )}
